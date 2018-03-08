@@ -33,9 +33,6 @@ Meteor.startup(() => {
             let players = Players.find({},{sort:{Score:-1}}).fetch();
             let updatedPlayers= positionPlayers(players);
 
-            console.log(updatedPlayers);
-            
-
         ReactDOM.render(<App title={title} players={updatedPlayers} />, document.getElementById('app'));
         // }, 1000);
         
