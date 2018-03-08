@@ -1,0 +1,13 @@
+.form{
+    display: flex;
+}
+
+.form__input{
+    border: 1px solid #f3f3f3;
+    flex-grow: 1;
+    padding: 0 1.3rem;
+
+    &:focus{
+        border: 2px solid cyan;
+    }
+}
